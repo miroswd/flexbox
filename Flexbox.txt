@@ -1,0 +1,89 @@
+///PARTE 01
+//Ambiente e conceitos
+O Flexbox layout -> veio junto com css3, cria layouts responsivos
+
+**ADAPTAÇÃO DE LAYOUTS NA WEB**
+
+instalado um plugin 'live server' -> alteração automática
+ctrl+shift+p >live server:open with live server
+ctrl+shift+p >stop live server
+
+criado um arquivo html, com importação de um css básico
+
+///PARTE 02
+//Primeiros passos
+Para trabalhar com Flexbox, é necessário colocar um display:flex na div
+Por padrão, o display: flex, alinha horizontalmente
+a propriedade por padrão que controla o alinhamento => flex-direction
+row: alinha na horizontal (row:linha)
+column: alinha na vertical (column:coluna)
+
+///PARTE 03
+//Alinhamento (align-items and justify-content)
+flex-direction: row
+    align-items: flex-start (padrão)//sempre alinha verticalmente
+    justify-content: //sempre alinha horizontalmente
+
+o align-items sempre vai alinhar os items no eixo contrário do flex-direction
+se o flex-direction estiver row (x) alinha os items em (y)
+se o flex-direction estiver column (y) alinha os items em (x)
+
+///PARTE 04
+//Redimensionamento -> Se o objeto deve ser expremido ou aumentado para caber no container dele
+flex-grow: 1; //Aceita ser aumentado no elemento pai
+flex-shrink: 1; //Aceita ser reduzido no elemento pai
+flex: 1; //Aceita ser aumentado ou reduzido
+
+///PARTE 05
+//Wrap de itens
+flex-wrap: wrap;
+align-content: ; //mesmas propriedades do justify-content
+                 //alinha os elementos, quando eles estão em mais de uma linha
+ele é avaliado baseado na largura do item
+
+*precisa desabilitar o flex do redimensionamento
+
+
+//PARTE 06
+//Ordem
+
+propriedade order
+order:0
+order:1
+
+
+///Módulo 02 /// 
+
+CRIAR PRIMEIRO O HTML depois o CSS
+
+///PARTE 07
+//Configurando o layout do app
+* {
+    margin: 0;
+    padding: 0;  
+    //reset dos elementos, para não ter espaçamento nativo
+
+    box-sizing:border-box; //Não aumenta o tamanho da width, faz um padding interno
+}
+
+body {
+    background
+    font-family
+    text-rendering:optimizeLegibility !important //Suaviza a fonte, !important (subscreve qualquer text-rendering)
+    -webkit-font-smoothing: antialiased !important;
+}
+
+
+///PARTE 08
+//Criando o header
+Ícones em SVG
+No sketch, averiguar a altura, já que a largura sempre será 100%
+
+Como as coisas estão alinhadas ? quais elementos conseguiram juntar ?
+
+referente ao twitter
+    (home + notifications + messages - MENU) (left)
+    logo  (center)
+    search + avatar + tweet (right)
+space-between -> separação entre os elementos
+
